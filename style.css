@@ -17,6 +17,7 @@ html {
 body {
   display: flex;
   padding: 0 20rem;
+  background-color: rgb(0, 0, 57);
 }
 aside {
   position: relative;
@@ -44,7 +45,7 @@ aside {
     }
     .title {
       color: antiquewhite;
-      font-size: 5.8rem;
+      font-size: 6.8rem;
     }
   }
   .photo-credit {
@@ -80,9 +81,16 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      padding: 2rem 0;
+      padding: 3rem 0;
       padding-left: 4rem;
       padding-right: 12rem;
+      border: none;
+      background-color: white;
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+      legend {
+        font-size: 2rem;
+        font-weight: bold;
+      }
       .input {
         display: flex;
         flex-direction: column;
@@ -98,6 +106,29 @@ main {
           border-radius: 0.5rem;
           outline: none;
         }
+      }
+    }
+    .submit {
+      padding: 4rem;
+      border: none;
+      button {
+        padding: 1rem 3rem;
+        border: none;
+        background-color: cornflowerblue;
+        font-weight: bold;
+        color: whitesmoke;
+        border-radius: 0.5rem;
+        box-shadow: rgba(27, 28, 31, 0.1) 0px 10px 10px -10px;
+      }
+      p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: gray;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+        color: cornflowerblue;
       }
     }
   }
