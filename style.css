@@ -102,9 +102,16 @@ main {
         }
         input {
           height: 2.6rem;
+          padding-left: 0.5rem;
           border: 2px solid gainsboro;
           border-radius: 0.5rem;
           outline: none;
+          &:focus {
+            border-color: cornflowerblue;
+          }
+          &:invalid {
+            border-color: red;
+          }
         }
       }
     }
